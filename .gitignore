@@ -8,5 +8,6 @@
 // that we specify here
 _notes
 debug.log
+node_modules
 ./package-lock.json
 wp-config.php
