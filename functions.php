@@ -117,8 +117,7 @@ add_action( 'widgets_init', 'supertwenty_widgets_init' );
  * Enqueue scripts and styles.
  */
 function supertwenty_scripts() {
-	wp_enqueue_style( 'supertwenty-style', get_stylesheet_uri() );
-
+	wp_enqueue_style( 'supertwenty-style', get_template_directory_uri() . '/dist/style.css' );
 	wp_enqueue_script( 'supertwenty-theme-js', get_template_directory_uri() . '/dist/bundle.js', array(), '20180213', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -126,6 +125,7 @@ function supertwenty_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'supertwenty_scripts' );
+
 
 /**
  * Implement the Custom Header feature.

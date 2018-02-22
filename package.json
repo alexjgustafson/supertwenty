@@ -4,7 +4,7 @@
   "description": "^20 === Hi. I'm a starter theme called `supertwenty`, or `^20`, if you like. I got my start from `_s`, available at https://underscores.me, then got my middle from Alex Gustafson. I might never finish.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,16 +16,14 @@
     "url": "https://github.com/alexjgustafson/supertwenty/issues"
   },
   "homepage": "https://github.com/alexjgustafson/supertwenty#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "css-loader": "^0.28.9",
-    "file-loader": "^1.1.6",
+    "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.7.2",
-    "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
-    "script-loader": "^0.7.2",
-    "slick-carousel": "^1.8.1",
-    "style-loader": "^0.20.1",
-    "url-loader": "^0.6.2",
+    "style-loader": "^0.20.2",
+    "uglifyjs-webpack-plugin": "^1.2.0",
     "webpack": "^3.11.0"
   }
 }
